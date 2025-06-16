@@ -24,6 +24,6 @@ PetalVision is a mobile application that uses machine learning to recognize diff
 - **Android Studio** – Development environment
 - **TFLite Model** – Custom CNN trained on flower dataset
 
-## 📂 Project Structure
+
 
 
