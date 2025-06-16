@@ -1,16 +1,29 @@
-# petal_vision
+# 🌸 PetalVision
 
-A new Flutter project.
+PetalVision is a mobile application that uses machine learning to recognize different types of flowers. It utilizes a custom-trained TensorFlow Lite model and is built using the Flutter framework. PetalVision aims to help users identify flowers quickly and easily using their smartphone cameras.
 
-## Getting Started
+## 📱 Features
 
-This project is a starting point for a Flutter application.
+- 🌼 Real-time flower recognition using the device camera
+- 🧠 Custom TFLite model trained on 5 flower classes:
+  - Lily
+  - Lotus
+  - Sunflower
+  - Orchid
+  - Tulip
+- 📷 Image capture and gallery upload options
+- ⚡ Fast, on-device inference (no internet needed)
+- 📊 Confidence score displayed for each prediction
+- 🧩 Easy-to-use interface with clean UI
 
-A few resources to get you started if this is your first Flutter project:
+## 🛠️ Tech Stack
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **Flutter** – Cross-platform app development
+- **TensorFlow Lite** – On-device ML model
+- **Dart** – Programming language for Flutter
+- **Android Studio** – Development environment
+- **TFLite Model** – Custom CNN trained on flower dataset
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 📂 Project Structure
+
+
