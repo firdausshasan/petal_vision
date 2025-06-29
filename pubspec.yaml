@@ -61,11 +61,15 @@ flutter:
   # the material Icons class.
   uses-material-design: true
   assets:
-    - assets/flower_recognition_model.tflite
     - assets/labels.txt
+    - assets/flower_recognition_model.tflite
+    - assets/images/daisy.png
+    - assets/images/dandelion.png
+    - assets/images/lavender.png
     - assets/images/lilly.png
     - assets/images/lotus.png
     - assets/images/orchid.png
+    - assets/images/rose.png
     - assets/images/sunflower.png
     - assets/images/tulip.png
   # To add assets to your application, add an assets section, like this:

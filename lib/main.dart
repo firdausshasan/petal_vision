@@ -43,17 +43,25 @@ class _HomeScreenState extends State<HomeScreen> {
   List<String> _labels = [];
 
   final Map<String, String> _flowerDescriptions = {
-    'Lilly': 'Lilies are a group of flowering plants that grow from bulbs and are native to the temperate regions of the Northern Hemisphere. The genus Lilium comprises over 80 species, many of which are cultivated for their large, prominent, and fragrant flowers. Lilies are monocotyledons with six petal-like tepals and typically six stamens. Their reproductive biology and fragrant compounds attract various pollinators, including bees and butterflies. They are widely used in ornamental gardening and have symbolic meanings in various cultures, often representing purity, transience, and motherhood.',
-    'Lotus': 'The lotus, commonly referred to as the sacred lotus, is a perennial aquatic plant belonging to the family Nelumbonaceae. Native to Asia, Nelumbo nucifera thrives in muddy, slow-moving freshwater habitats. The plant features large, circular leaves and striking pink to white flowers that bloom above the water surface. It is revered in religious and cultural contexts, particularly in Buddhism and Hinduism, symbolizing purity, enlightenment, and rebirth. Notably, the lotus exhibits thermoregulation (self-heating) and has seeds that can remain viable for hundreds of years, showcasing its extraordinary resilience.',
-    'Orchid': 'Orchids are among the largest and most diverse families of flowering plants, with over 25,000 species and more than 100,000 hybrids. The family Orchidaceae is known for its complex flower morphology, specialized pollination mechanisms, and symbiotic relationships with mycorrhizal fungi. Orchid flowers typically have three sepals and three petals, one of which forms a distinctive lip (labellum) used to attract pollinators. Found in almost every habitat except glaciers, orchids vary from tiny epiphytic species to large terrestrial types. They symbolize love, beauty, strength, and luxury, and are extensively cultivated for horticultural and medicinal purposes.',
-    'Sunflower': 'The sunflower is a large annual flowering plant native to North America, belonging to the Asteraceae family. Its name comes from its heliotropic behavior—the flower head turns to follow the sun throughout the day. Sunflowers can grow over 3 meters tall and have broad, rough leaves and large, yellow-rayed flower heads with hundreds of florets that mature into edible seeds. Rich in oil and nutrients, sunflower seeds are a major agricultural product. In addition to their economic value, sunflowers are also used in phytoremediation to extract toxins from the soil, making them an important plant in environmental science.',
-    'Tulip': 'Tulips are spring-blooming bulbous perennials in the Liliaceae family, native to Central Asia and Turkey but widely cultivated worldwide. The genus Tulipa includes about 75 species and thousands of cultivars, prized for their cup-shaped, symmetrical flowers and wide range of vibrant colors. Tulips played a major role in economic history during the Dutch Golden Age in the 17th century, leading to the financial phenomenon known as "Tulip Mania." Tulips symbolize perfect love and rebirth and are known for their phototropic nature, often bending towards the light. Scientifically, tulips are studied for their chromosomal diversity and role in hybridization.',
+    'Daisy': 'Daisies are composite flowers from the Asteraceae family with white petals and a yellow center. They symbolize innocence and purity, and are found in temperate regions around the world.',
+    'Dandelion': 'Dandelions are hardy flowering plants known for their bright yellow blossoms and puffball seed heads. They are used in traditional medicine and symbolize resilience and hope.',
+    'Lavender': 'Lavender is a fragrant herb from the mint family, often used in aromatherapy and skincare. Its purple flowers symbolize calmness, grace, and serenity.',
+    'Lilly': 'Lilies grow from bulbs and produce large, fragrant flowers with symbolic meanings of purity and motherhood. They are popular in gardens and floral arrangements.',
+    'Lotus': 'The lotus is a sacred aquatic plant symbolizing purity and enlightenment in many cultures. It has large, floating leaves and blooms above the water surface.',
+    'Orchid': 'Orchids are highly diverse flowers known for their symmetry and unique pollination strategies. They represent love, beauty, and strength.',
+    'Rose': 'Roses are iconic flowering plants with layered petals and a strong fragrance. They are globally recognized symbols of love, passion, and romance.',
+    'Sunflower': 'Sunflowers are tall plants with large yellow blooms that follow the sun. They symbolize loyalty and longevity and are valued for their seeds and oil.',
+    'Tulip': 'Tulips are spring-blooming perennials known for their colorful, cup-shaped flowers. They symbolize perfect love and are historically tied to "Tulip Mania" in the Netherlands.',
   };
 
   final Map<String, String> _flowerImages = {
+    'Daisy': 'assets/images/daisy.png',
+    'Dandelion': 'assets/images/dandelion.png',
+    'Lavender': 'assets/images/lavender.png',
     'Lilly': 'assets/images/lilly.png',
     'Lotus': 'assets/images/lotus.png',
     'Orchid': 'assets/images/orchid.png',
+    'Rose': 'assets/images/rose.png',
     'Sunflower': 'assets/images/sunflower.png',
     'Tulip': 'assets/images/tulip.png',
   };
@@ -66,15 +74,10 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   Future<void> loadLabels() async {
-    final rawLabels = await loadAssetLabels('assets/labels.txt');
+    final rawLabels = await rootBundle.loadString('assets/labels.txt');
     setState(() {
-      _labels = rawLabels;
+      _labels = rawLabels.split('\n').map((e) => e.trim()).toList();
     });
-  }
-
-  Future<List<String>> loadAssetLabels(String assetPath) async {
-    final labelsFile = await rootBundle.loadString(assetPath);
-    return labelsFile.split('\n').map((e) => e.trim()).toList();
   }
 
   Future<void> loadModel() async {
@@ -263,4 +266,3 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 }
-
