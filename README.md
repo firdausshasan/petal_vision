@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="[https://raw.githubusercontent.com/yourusername/petal_vision/main/assets/icon.png](https://raw.githubusercontent.com/firdausshasan/petal_vision/refs/heads/main/assets/icon/petalvision.png)" width="120" alt="PetalVision Icon">
+  <img src="[https://raw.githubusercontent.com/yourusername/petal_vision/main/assets/icon.png]" width="120" alt="PetalVision Icon">
 </p>
 
 # 🌸 PetalVision
