@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/yourusername/petal_vision/main/assets/icon.png" width="120" alt="Petal Vision Icon">
+</p>
+
 # 🌸 PetalVision
 
 PetalVision is a mobile application that uses machine learning to recognize different types of flowers. It utilizes a custom-trained TensorFlow Lite model and is built using the Flutter framework. PetalVision aims to help users identify flowers quickly and easily using their smartphone cameras.
