@@ -39,7 +39,7 @@ PetalVision is a Flutter mobile application that utilizes a custom-built TensorF
 
 1. **Clone the Repository**
     ```bash
-    git clone https://github.com/yourusername/petal_vision.git
+    git clone https://github.com/firdausshasan/petal_vision.git
     cd petal_vision
     ```
 
