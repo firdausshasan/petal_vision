@@ -15,11 +15,15 @@ PetalVision is a Flutter mobile application that utilizes a custom-built TensorF
 ## 📱 Features
 
 - 🌼 Real-time flower recognition using the device camera
-- 🧠 Custom TFLite model trained on 5 flower classes:
+- 🧠 Custom TFLite model trained on 9 flower classes:
+  - Daisy
+  - Dandelion
+  - Lavender
   - Lily
   - Lotus
-  - Sunflower
   - Orchid
+  - Rose
+  - Sunflower
   - Tulip
 - 📷 Image capture and gallery upload options
 - ⚡ Fast, on-device inference (no internet needed)
