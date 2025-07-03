@@ -73,9 +73,9 @@ PetalVision is a Flutter mobile application that utilizes a custom-built TensorF
 dependencies:
   flutter:
     sdk: flutter
-  image_picker: ^1.0.0
-  tflite_flutter: ^0.10.0
-  image: ^4.0.17
+  image_picker: ^1.0.4
+  tflite_flutter: ^0.11.0
+  image: ^3.3.0
   ```
 
 ## 📱 How to Use PetalVision
