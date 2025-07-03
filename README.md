@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="[https://raw.githubusercontent.com/yourusername/petal_vision/main/assets/icon.png]" width="120" alt="PetalVision Icon">
+  <img src="[https://raw.githubusercontent.com/firdausshasan/petal_vision/refs/heads/main/assets/icon/petalvision.png]" width="120" alt="PetalVision Icon">
 </p>
 
 # 🌸 PetalVision
@@ -83,7 +83,7 @@ dependencies:
 ### 1️⃣ Open the PetalVision App
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/yourusername/petal_vision/main/screenshots/open_app.png" width="250" alt="Open App">
+  <img src="https://raw.githubusercontent.com/firdausshasan/petal_vision/refs/heads/main/assets/steps/step%201.png" width="250" alt="Open App">
 </p>
 
 ---
@@ -91,7 +91,7 @@ dependencies:
 ### 2️⃣ Tap on "Gallery" to Choose a Flower Image from Your Phone
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/yourusername/petal_vision/main/screenshots/select_gallery.png" width="250" alt="Select from Gallery">
+  <img src="https://raw.githubusercontent.com/firdausshasan/petal_vision/refs/heads/main/assets/steps/step%202.png" width="250" alt="Select from Gallery">
 </p>
 
 ---
@@ -99,7 +99,7 @@ dependencies:
 ### 3️⃣ The App Will Detect the Flower and Show Its Name
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/yourusername/petal_vision/main/screenshots/result.png" width="250" alt="Prediction Result">
+  <img src="https://raw.githubusercontent.com/firdausshasan/petal_vision/refs/heads/main/assets/steps/step%203.png" width="250" alt="Prediction Result">
 </p>
 
 ---
